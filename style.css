@@ -1,0 +1,117 @@
+:root {
+  --cor-fundo: #0D0C0A;       
+  --cor-principal: #1A1714;   
+  --cor-secundaria: #2B2620;  
+  --cor-destaque: #FFC107;    
+  --cor-texto: #FFF8E7;       
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid #332B20;
+}
+
+h1 {
+  color: var(--cor-destaque);
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+}
+
+.texto-introducao,
+.caixa-perguntas,
+.texto-resultado {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.texto-introducao {
+  text-align: justify;
+}
+
+.botao-iniciar {
+  background-color: transparent;
+  color: transparent;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.botao-iniciar:hover {
+  background-color: var(--cor-destaque);
+  color: #0D0C0A;
+  border-color: var(--cor-destaque);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+.escondido {
+  display: none;
+}
+
+.caixa-alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caixa-alternativas button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: 1px solid #423A30;
+  border-radius: 12px;
+  padding: 20px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+  width: 100%;
+}
+
+.caixa-alternativas button:hover {
+  background-color: var(--cor-destaque);
+  color: #0D0C0A;
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+
+/* Botão "Jogar Novamente" */
+.botao-jogar-novamente {
+  background-color: var(--cor-destaque);
+  color: #0D0C0A;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-jogar-novamente:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
